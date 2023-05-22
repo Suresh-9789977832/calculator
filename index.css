@@ -1,0 +1,45 @@
+  .child{
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 425px;
+    width: 485px;  
+    border-radius: 10px;
+    margin: auto;
+    /* font-size: 51PX; */
+    background-color:yellow;
+ box-shadow:  10PX 10PX 5PX 12PX gainsboro} 
+
+body{
+    background-color:floralwhite;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    padding: 25px;
+    margin: 10px;
+    font-size: large;
+    box-shadow: inset 2px 2PX black;
+    text-align: end;
+    background-color: yellowgreen;
+    color:black;
+    border-radius:5PX;
+    /* cursor: pointer;  */
+    
+}
+button:hover{
+    background-color:snow ;
+}
+
+  
+input{
+    background-color:yellow;
+    width: 476px;
+    height: 50px;
+    display: block;
+    justify-content: center;
+    border-radius: 5px;
+    font-size:25PX;
+
+}
+ 
