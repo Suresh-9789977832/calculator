@@ -1,4 +1,4 @@
-  .child{
+  #child{
     box-sizing: border-box;
     border: 1px solid black;
     height: 425px;
@@ -40,6 +40,14 @@ input{
     justify-content: center;
     border-radius: 5px;
     font-size:25PX;
+
+}
+h1{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    
 
 }
  

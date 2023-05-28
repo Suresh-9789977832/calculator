@@ -1,15 +1,22 @@
 let value=0
 
+let title=document.createElement('h1')
+title.setAttribute('id','title')
+title.innerHTML='calculator'
+document.body.appendChild(title)
+
+
+
 let parent=document.createElement('div')
-parent.setAttribute('class','parent')
+parent.setAttribute('id','parent')
 document.body.appendChild(parent)
 
 let child =document.createElement('div')
-child.setAttribute('class','child')
+child.setAttribute('id','child')
 parent.appendChild(child)
 
 let input=document.createElement('input')
-input.setAttribute('id','input')
+input.setAttribute('id','result')
 input.setAttribute('type',"text")
 input.setAttribute('placeholder',value)
 // input.setAttribute('value','10')
@@ -22,6 +29,7 @@ child.appendChild(Row1)
 
 let button1=document.createElement('button')
 button1.setAttribute('onclick','clr()')
+button1.setAttribute('id','clear')
 button1.innerHTML='C'
 Row1.appendChild(button1)
 
@@ -87,6 +95,7 @@ Row3.appendChild(button11)
 
 let button12=document.createElement('button')
 button12.setAttribute('onclick',"display('-')")
+button12.setAttribute('id','subtract')
 button12.innerHTML='-'
 Row3.appendChild(button12)
 
@@ -112,6 +121,7 @@ Row4.appendChild(button15)
 
 let button16=document.createElement('button')
 button16.setAttribute('onclick',"display('+')")
+button16.setAttribute('id','add')
 button16.innerHTML='+'
 Row4.appendChild(button16)
 
@@ -132,7 +142,7 @@ Row5.appendChild(button18)
 
 let button19=document.createElement('button')
 button19.setAttribute('onclick','solve()')
-button19.setAttribute('class','button19')
+button19.setAttribute('id','equal')
 button19.innerHTML='='
 Row5.appendChild(button19)
 
@@ -145,7 +155,7 @@ Row5.appendChild(button20)
 
                                                                                 
 
-        let result=document.getElementById('input')
+        let result=document.getElementById('result')
 
 
         function display(number){
